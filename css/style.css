@@ -30,6 +30,14 @@ header {
     justify-content: center;
 }
 
+.container {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .nav-container {
     display: flex;
     flex-direction: column;
@@ -39,6 +47,7 @@ header {
 
 .nav-container h1 {
     margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .nav-container ul {
@@ -48,6 +57,10 @@ header {
 .nav-container li {
     list-style-type: none;
     margin: 0 0 0 20px;
+}
+
+.nav-container a {
+    font-size: 14px;
 }
 
 #profile {
@@ -82,6 +95,7 @@ header {
 #portfolio h2 {
     margin: 60px 0 20px 0;
     font-size: 2rem;
+    color: var(--color-dark-blue);
 }
 
 .portifolio-container-imgs {
@@ -93,6 +107,59 @@ header {
 #portfolio img{
     width: 100%;
     max-width: 400px;
-    margin: 20px 0;
+    margin: 20px;
     border-radius: 8px;
+}
+
+footer {
+    background-color: var(--color-dark-blue);
+    padding: 29px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+    height: 120px;
+}
+
+footer h3{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+footer img{
+    width: 32px;
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 24px;
+    }
+
+    .nav-container {
+        width: 100%;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-container h1 {
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    
+    
+    .nav-container li {
+        margin: 0 0 0 30px;
+    }
+    
+    .nav-container a {
+        font-size: 18px;
+    }
+
+    #portfolio img{
+        width: 280px;
+    }
 }
